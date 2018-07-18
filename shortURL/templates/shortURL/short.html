@@ -1,0 +1,37 @@
+
+{% extends "shortURL/base.html" %}
+    {% block content %}
+    <style>
+        .card{
+            background-color:rgb(197, 197, 197) !important;
+            margin-top:3em;
+            padding: 10%;
+            text-align: center
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="data-long"style="overflow:hidden">
+                        <b>Long</b><br>
+                        {{ object.url | truncatechars_html:50 }}
+                    </div>
+                    <div class="data-short" style="margin-top:1em">
+                        <b>Short</b><br>
+                        <a href="{{ object.get_short_url }}">{{ object.get_short_url }}</a> 
+                    </div></br>
+                    <div class="new-short">
+                        <button type="button" class="btn btn-primary" onclick="window.location='{%url "shortURL:index" %}'">
+                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                        Create new
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-3"></div></div>
+        </div>
+    </div>
+    {% endblock content %}
+        

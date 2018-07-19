@@ -25,8 +25,8 @@ SECRET_KEY = 'ql=_r$j-nr%n%54g*k1v1_%q=@5ej_!7%iv0o7k$-2qmx^$z2h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*', "smolr.herokuapp.com", "smolr.cf", "www.smolr.cf", "so-s.ml", "www.so-s.ml"]
-SITE_URL = "http://smolr.herokuapp.com/"
+ALLOWED_HOSTS = ['*', "smolr.herokuapp.com", "smolr.cf", "www.smolr.cf"]
+SITE_URL = "http://smolr.cf"
 
 # Application definition
 

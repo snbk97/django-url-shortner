@@ -6,3 +6,6 @@ body{
     background-color: var(--bg-color) !important;
 
 }
+.card{
+    border-radius: 5px !important;
+}

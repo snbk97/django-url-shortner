@@ -3,8 +3,11 @@
         <div class="container" style="padding-top:3em">
             <div class="row">
                 <div class="col-lg-5 col-md-4"></div>
-                <div class="col-lg-2 col-md-4 col-sm-12">
-                        <center> <h1>SML.ER</h1></center>
+                <div class="col-lg-2 col-md-4 col-sm-12" style="color:white; padding-bottom:2em">
+                        <center>
+                            <h1 style="font-family:Megrim; font-size: 48px">Smolr</h1>
+                            <h5 style="font-family:Cutive Mono" >A URL shortning service.</h5>
+                        </center>
                 </div>
                 <div class="col-lg-5 col-md-4"></div>
             </div>
@@ -14,7 +17,7 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 center-block">
                     <center>
-                    <form method="POST" style="margin-top:20%">
+                    <form method="POST" style="margin-top:4em">
                             {% csrf_token %}
                             <span>
                                     <input name="url" class="form-control align-middle" placeholder="Enter Long URL" autocomplete="off" required="" id="id_url" type="url" placeholder="Enter Long URL" style="text-align:center; width:60%">
